@@ -1,15 +1,28 @@
-/**
-* Template Name: Hidayah - v4.7.0
-* Template URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
+
 (function() {
   "use strict";
 
   /**
    * Easy selector helper function
    */
+   $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+  })
+
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {
